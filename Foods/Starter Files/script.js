@@ -1,5 +1,11 @@
 "use strict";
 
+document.querySelector(".menu").addEventListener("click", () => {
+  document.querySelectorAll(".target").forEach((item) => {
+    item.classList.toggle("change");
+  });
+});
+
 const icons = document.querySelectorAll(".section-1__icons i");
 let count = 0;
 
